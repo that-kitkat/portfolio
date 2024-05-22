@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#Welcome{
+ display: flex; flex-direction: row; align-items: center; justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.ring {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ring i {
+  position: absolute;
+  inset: 0;
+  border: 2px solid #fff;
+  transition: 0.5s;
+}
+.ring i:nth-child(1) {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animate 6s linear infinite;
+}
+.ring i:nth-child(2) {
+  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+  animation: animate 4s linear infinite;
+}
+.ring i:nth-child(3) {
+  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+  animation: animate2 10s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/*Base style*/
+html {
+	font-size: 62.5%;
+}
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;  
+  background-image: linear-gradient(#748BA7, #764B8E);
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur817.cur), auto !important;
+}
+
+h1 {
+  font-family: 'Abril Fatface', serif;
+  font-size: 50px;  
+  color: #FFF;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;  
+  color: #81B9F4;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  top: 45px;
+  right: -50px;
+}
+
+h2 a:hover {
+  color: #6DA5DF;
+}
+
+#temp{
+  font-size: 10px;
+  position:relative;
+  top: 80px;
+  left: -700px;
+  font-weight: bold;
+}
+
